@@ -1,0 +1,86 @@
+.footer {
+  margin-top: 8px;
+  padding-block: 48px 32px;
+  background: var(--color-bg-soft);
+  color: var(--color-body);
+  border-top: 1px solid var(--color-border);
+  font-size: 0.9375rem;
+  transition: background-color 0.35s ease, color 0.35s ease, border-color 0.35s ease;
+}
+
+.footer__grid {
+  display: grid;
+  gap: 32px;
+}
+
+@media (min-width: 768px) {
+  .footer__grid {
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 48px;
+  }
+}
+
+.footer__logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 12px;
+  font-family: var(--font-serif);
+  font-size: 1.375rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--color-ink);
+}
+
+.footer__logo-mark {
+  display: block;
+  width: 40px;
+  height: 40px;
+  filter: drop-shadow(0 2px 5px rgba(0, 63, 52, 0.3));
+}
+
+/* Same split as the header: "Finzoria" in ink, "Finance" in brand colour. */
+.footer__logo-name span {
+  color: var(--color-brand);
+}
+
+.footer__brand p {
+  max-width: 420px;
+}
+
+.footer__heading {
+  margin-bottom: 14px;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.footer__list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__list a {
+  transition: color 0.15s ease;
+}
+
+.footer__list a:hover {
+  color: var(--color-brand);
+}
+
+.footer__bottom {
+  display: grid;
+  gap: 12px;
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid var(--color-border);
+  font-size: 0.8125rem;
+}
+
+

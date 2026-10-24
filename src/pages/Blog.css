@@ -1,0 +1,42 @@
+.listing__header {
+  max-width: 720px;
+  margin-bottom: 28px;
+}
+
+.listing__title {
+  margin-block: 6px 10px;
+  font-size: clamp(2rem, 1.5rem + 2vw, 2.75rem);
+}
+
+.listing__description {
+  font-size: 1.0625rem;
+}
+
+.listing__count {
+  margin-top: 10px;
+  font-size: 0.8125rem;
+  color: var(--color-muted);
+}
+
+.listing__topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+.listing__chip {
+  padding: 8px 14px;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  background: var(--color-surface);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-ink);
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.listing__chip:hover {
+  border-color: var(--color-brand);
+  color: var(--color-brand);
+}

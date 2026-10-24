@@ -1,0 +1,22 @@
+{
+  "name": "finzoria-finance",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "FinzoriaFinance — a responsive financial education publication built with React, React Router and Google Ad Manager (test units).",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-icons": "^5.7.0",
+    "react-router-dom": "^7.18.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.2.0",
+    "vite": "^7.3.7"
+  }
+}

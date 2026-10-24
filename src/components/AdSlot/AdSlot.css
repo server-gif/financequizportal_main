@@ -1,0 +1,59 @@
+.ad-slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.ad-slot__label {
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  margin-top: 2rem;
+}
+
+.ad-slot__frame {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: var(--ad-min-h-mobile);
+  overflow: hidden;
+  /* never let a creative cause horizontal scroll */
+}
+
+@media (min-width: 768px) {
+  .ad-slot__frame {
+    min-height: var(--ad-min-h-desktop);
+  }
+}
+
+.ad-slot__unit {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.ad-slot__unit iframe {
+  max-width: 100%;
+}
+
+/* Placement spacing */
+/* .ad-slot--top {
+  padding-block: 16px;
+} */
+
+.ad-slot--content {
+  padding-block: 24px;
+}
+
+/* Hide empty frame borders from the main ad bands to keep a clean look */
+/* .ad-band {
+  background: var(--color-bg-soft);
+  background: linear-gradient(135deg, #e8f4ef 0%, #f7f5f0 40%, #fdf9f0 100%);
+} */
