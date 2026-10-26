@@ -26,8 +26,8 @@ export default function BlogDetail() {
         title={blog.title}
         description={blog.excerpt}
         image={blog.ogImage}
-        // ogImage is our own cover illustration, not the in-article photograph,
-        // so it gets its own description rather than reusing blog.imageAlt.
+        // ogImage is the social card — the cover illustration plus the title — so
+        // it gets its own description rather than reusing blog.imageAlt.
         imageAlt={`${blog.title} — cover illustration`}
         type="article"
         path={`/blog/${blog.slug}`}

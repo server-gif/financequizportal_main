@@ -4,7 +4,7 @@
 
 .DESCRIPTION
   The default Open Graph image carries the brand: the deep-green gradient and dot
-  grid are drawn with GDI+, while the FinzoriaFinance logo itself is rasterised from
+  grid are drawn with GDI+, while the FinanceQuizPortal logo itself is rasterised from
   public\favicon.svg (the single source of truth for the mark) using headless Edge,
   so the card can never drift away from the logo used in the header.
 
@@ -21,8 +21,8 @@ $root = Resolve-Path (Join-Path $PSScriptRoot '..')
 $outFile = Join-Path $root 'public\images\og\og-default.png'
 $logoSvg = Join-Path $root 'public\favicon.svg'
 
-$brandName  = 'Finzoria'
-$brandTail  = 'Finance'
+$brandName  = 'Finance'
+$brandTail  = 'QuizPortal'
 $tagline    = 'Clear, practical money education'
 
 $w = 1200
@@ -50,7 +50,14 @@ try {
     "--screenshot=$logoPng",
     "file:///$($logoSvg.Replace('\', '/'))"
   )
-  Start-Process -FilePath $edge -ArgumentList $edgeArgs -Wait -NoNewWindow
+  # Edge logs harmless GPU warnings to stderr, which would trip ErrorActionPreference.
+  $previousErrorAction = $ErrorActionPreference
+  $ErrorActionPreference = 'Continue'
+  & $edge @edgeArgs 2>$null | Out-Null
+  $ErrorActionPreference = $previousErrorAction
+  # Headless Edge flushes the screenshot a moment after it exits, so poll briefly
+  # instead of assuming the file is there the instant the browser returns.
+  for ($i = 0; $i -lt 20 -and -not (Test-Path $logoPng); $i++) { Start-Sleep -Milliseconds 250 }
   if (-not (Test-Path $logoPng)) { throw "Edge did not produce $logoPng" }
 
   # --- Draw the card ------------------------------------------------------------
@@ -88,7 +95,7 @@ try {
   $g.DrawImage($logo, [single]$markX, [single]$markY, [single]$markSize, [single]$markSize)
   $logo.Dispose()
 
-  # Wordmark: "Finzoria" in white, "Finance" in the logo gold — joined, no space.
+  # Wordmark: "Finance" in white, "QuizPortal" in the logo gold — joined, no space.
   $titleFont = New-Object System.Drawing.Font('Segoe UI', 92, [System.Drawing.FontStyle]::Bold, [System.Drawing.GraphicsUnit]::Pixel)
   $nameSize = $g.MeasureString($brandName, $titleFont)
   $tailSize = $g.MeasureString($brandTail, $titleFont)

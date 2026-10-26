@@ -28,7 +28,7 @@
   height: 420px;
   top: -160px;
   right: -80px;
-  background: rgba(11, 93, 71, 0.18);
+  background: var(--hero-orb-1);
 }
 
 .hero__orb--2 {
@@ -36,15 +36,15 @@
   height: 320px;
   bottom: -160px;
   left: -100px;
-  background: rgba(214, 170, 72, 0.18);
+  background: var(--hero-orb-2);
 }
 
 .hero__grid {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(11, 93, 71, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(11, 93, 71, 0.06) 1px, transparent 1px);
+    linear-gradient(var(--hero-grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--hero-grid-line) 1px, transparent 1px);
   background-size: 40px 40px;
   -webkit-mask-image: radial-gradient(ellipse 70% 60% at 70% 40%, #000 30%, transparent 75%);
   mask-image: radial-gradient(ellipse 70% 60% at 70% 40%, #000 30%, transparent 75%);
@@ -83,8 +83,8 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--color-brand);
-  background: rgba(11, 93, 71, 0.08);
-  border: 1px solid rgba(11, 93, 71, 0.18);
+  background: var(--hero-tag-bg);
+  border: 1px solid var(--hero-tag-border);
   border-radius: 999px;
 }
 
@@ -118,7 +118,7 @@
   height: 0.32em;
   z-index: -1;
   border-radius: 4px;
-  background: linear-gradient(90deg, rgba(214, 170, 72, 0.45), rgba(11, 93, 71, 0.15));
+  background: linear-gradient(90deg, var(--hero-underline-from), var(--hero-underline-to));
   transform: skewX(-12deg) scaleX(0);
   transform-origin: left center;
   animation: hero-underline 0.9s 0.3s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
@@ -147,7 +147,7 @@
   font-size: 0.8125rem;
   font-weight: 500;
   color: var(--color-ink);
-  background: #ffffff;
+  background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: 999px;
 }
@@ -171,14 +171,14 @@
 }
 
 .hero__btn--primary {
-  color: #ffffff;
+  color: var(--color-on-brand);
   background: var(--color-brand);
   border: 1.5px solid var(--color-ink);
   box-shadow: 4px 4px 0 var(--color-ink);
 }
 
 .hero__btn--primary:hover {
-  color: #ffffff;
+  color: var(--color-on-brand);
   background: var(--color-brand-dark);
   transform: translate(-2px, -2px);
   box-shadow: 6px 6px 0 var(--color-ink);
@@ -241,7 +241,7 @@
   width: 300px;
   padding: 18px 18px 12px;
   color: var(--color-brand);
-  background: #ffffff;
+  background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-lg);
@@ -272,7 +272,7 @@
   font-size: 0.75rem;
   font-weight: 700;
   color: var(--color-brand);
-  background: rgba(11, 93, 71, 0.1);
+  background: var(--hero-badge-bg);
   border-radius: 999px;
 }
 
@@ -295,7 +295,7 @@
 }
 
 .hero__chart-dot {
-  fill: #ffffff;
+  fill: var(--color-surface);
   stroke: currentColor;
   stroke-width: 2.5;
   opacity: 0;
@@ -310,7 +310,7 @@
   gap: 12px;
   width: 264px;
   padding: 12px 14px 12px 12px;
-  background: rgba(255, 255, 255, 0.92);
+  background: var(--hero-card-bg);
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   border: 1px solid var(--color-border);
@@ -356,11 +356,11 @@
   height: 26px;
   font-size: 0.65rem;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--color-on-brand);
   background: var(--color-brand);
-  border: 2px solid #ffffff;
+  border: 2px solid var(--color-surface);
   border-radius: 50%;
-  box-shadow: 0 2px 6px rgba(11, 93, 71, 0.3);
+  box-shadow: var(--hero-num-shadow);
 }
 
 .hero__card-image {
@@ -402,15 +402,15 @@
    ========================================================== */
 @keyframes hero-pulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(11, 93, 71, 0.45);
+    box-shadow: 0 0 0 0 var(--hero-pulse);
   }
 
   70% {
-    box-shadow: 0 0 0 8px rgba(11, 93, 71, 0);
+    box-shadow: 0 0 0 8px var(--hero-pulse-fade);
   }
 
   100% {
-    box-shadow: 0 0 0 0 rgba(11, 93, 71, 0);
+    box-shadow: 0 0 0 0 var(--hero-pulse-fade);
   }
 }
 
@@ -504,47 +504,4 @@
     width: 280px;
     height: 280px;
   }
-}
-
-/* ==========================================================
-   DARK THEME OVERRIDES (decorative rgba tints)
-   ========================================================== */
-html[data-theme='dark'] .hero__orb--1 {
-  background: rgba(63, 140, 255, 0.16);
-}
-
-html[data-theme='dark'] .hero__orb--2 {
-  background: rgba(217, 164, 65, 0.1);
-}
-
-html[data-theme='dark'] .hero__grid {
-  background-image:
-    linear-gradient(rgba(63, 140, 255, 0.07) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(63, 140, 255, 0.07) 1px, transparent 1px);
-}
-
-html[data-theme='dark'] .hero__tag {
-  background: rgba(63, 140, 255, 0.12);
-  border-color: rgba(63, 140, 255, 0.3);
-}
-
-html[data-theme='dark'] .hero__topic,
-html[data-theme='dark'] .hero__panel {
-  background: var(--color-surface);
-}
-
-html[data-theme='dark'] .hero__panel-badge {
-  background: rgba(63, 140, 255, 0.16);
-}
-
-html[data-theme='dark'] .hero__chart-dot {
-  fill: var(--color-surface);
-}
-
-html[data-theme='dark'] .hero__card {
-  background: rgba(18, 34, 56, 0.92);
-}
-
-html[data-theme='dark'] .hero__card-num {
-  border-color: var(--color-surface);
 }

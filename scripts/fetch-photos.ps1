@@ -3,10 +3,14 @@
   Downloads the 14 article photographs into public\images\photos\.
 
 .DESCRIPTION
-  FinzoriaFinance article images are real photographs used under the Pexels Licence:
-  free for commercial use, no attribution required (https://www.pexels.com/license/).
-  Copyright stays with each photographer, so the Terms page deliberately does not
-  describe photographs as FinzoriaFinance work.
+  Every article in src/data/blogs.js points at public\images\photos\<slug>.jpg, and the
+  social cards in public\images\og\ are rendered from those same files by
+  scripts/make-og-cards.mjs (npm run ogcards). Run this after a fresh clone, or after
+  adding an article, so every page has a real photograph.
+
+  The photographs are used under the Pexels Licence: free for commercial use, no
+  attribution required (https://www.pexels.com/license/). Copyright stays with each
+  photographer.
 
   Files are self-hosted rather than hot-linked, so a removed or renamed upstream
   file can never break the live site.
@@ -40,20 +44,20 @@ $dest = Join-Path $root 'public\images\photos'
 # slug => Pexels photo id. This table is the single source of truth; src/data
 # and src/config never name a third-party image URL themselves.
 $photos = [ordered]@{
-  'how-compound-interest-works'          = 11391951
-  'beginners-guide-to-investing'         = 5716016
-  'how-to-build-an-emergency-fund'       = 7010128
-  'smart-ways-to-save-money'             = 1602726
-  'understanding-mutual-funds'           = 730564
-  'what-is-a-credit-score'               = 19867473
-  'how-to-create-a-monthly-budget'       = 4386339
-  'stock-market-basics-for-beginners'    = 6770610
-  'how-inflation-affects-your-money'     = 4971967
-  'financial-planning-for-young-adults'  = 6963046
-  'how-to-use-credit-cards-responsibly'  = 5239818
-  'understanding-loans-and-interest-rates' = 8293750
-  'tax-basics-everyone-should-know'      = 6863337
-  'how-small-businesses-manage-cash-flow' = 4921267
+  'compound-interest-why-time-beats-timing'      = 11391951
+  'first-investment-step-by-step-plan'           = 5716016
+  'emergency-fund-how-much-is-enough'            = 9821387
+  '30-day-money-reset-saving-habits'             = 1602726
+  'mutual-funds-explained-costs-and-choosing'    = 7651559
+  'credit-score-what-moves-the-number'           = 19867473
+  'build-a-budget-that-survives-the-month'       = 4386339
+  'how-share-markets-actually-work'              = 6770610
+  'inflation-and-your-purchasing-power'          = 4971967
+  'money-plan-for-your-twenties'                 = 6963046
+  'credit-cards-how-to-keep-them-cheap'          = 5239818
+  'compare-financial-products-properly'          = 8293750
+  'tax-basics-that-touch-every-payslip'         = 6863337
+  'cash-flow-for-small-businesses'               = 4921271
 }
 
 New-Item -ItemType Directory -Force -Path $dest | Out-Null
@@ -113,7 +117,7 @@ if ($failed.Count -gt 0) {
   Write-Host 'These articles have no photo yet. Pick any free image on pexels.com and' -ForegroundColor Yellow
   Write-Host "save it as public\images\photos\<slug>.jpg, or re-run with -PicsumFallback:" -ForegroundColor Yellow
   $failed | ForEach-Object { Write-Host "  $_" -ForegroundColor Yellow }
-  Write-Host 'Until then each article shows its own illustration as a fallback.' -ForegroundColor Yellow
+  Write-Host 'Until then each article shows the site fallback image.' -ForegroundColor Yellow
   exit 1
 }
 

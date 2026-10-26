@@ -1,4 +1,4 @@
-# FinzoriaFinance — Financial Blog (React + Google Ad Manager)
+# FinanceQuizPortal — Financial Blog (React + Google Ad Manager)
 
 A responsive financial-education publication built with React 19, React Router 7 and Vite,
 with Google Ad Manager (GAM) display placements and an interstitial shown when a reader opens an article.
@@ -10,9 +10,11 @@ npm install
 npm run dev        # http://localhost:5173
 npm run build      # production build in dist/
 npm run preview    # serve the production build
+npm run photos     # re-download any missing article photographs (Pexels)
+npm run ogcards    # rebuild the 1200x675 social cards from the photos (needs Microsoft Edge)
 ```
 
-Set `VITE_SITE_URL=https://finzoriafinance.com` at build time so canonical and Open Graph URLs are correct
+Set `VITE_SITE_URL=https://financequizportal.com` at build time so canonical and Open Graph URLs are correct
 (it is already in `.env`, and `src/config/site.js` falls back to the same domain).
 
 ## Project structure
@@ -40,7 +42,8 @@ src/
 ├── layouts/MainLayout.jsx header → top ad → page → footer ad → footer
 ├── pages/                 Home, Blog (all + category), BlogDetail, About, NotFound
 └── services/googleAdManager.js   the only code that touches window.googletag
-public/images/             article illustrations (SVG) and og/ PNGs for social previews
+public/images/photos/      one licensed stock photograph per article (scripts/fetch-photos.ps1)
+public/images/og/          the same photo plus the headline, as 1200x675 PNG social cards
 ```
 
 ## Google Ad Manager

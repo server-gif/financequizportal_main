@@ -3,19 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#0b5d47" />
+    <meta name="theme-color" content="#020b07" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://securepubads.g.doubleclick.net" crossorigin />
     <!-- Fonts use the native system stack (iOS SF Pro on Apple devices) — no webfont download. -->
     <!-- Title, description, canonical and Open Graph tags are rendered per page by <SEO />. -->
     <script>
-      /* Apply saved theme before first paint so there is no light flash on load. */
+      /* Apply the theme before first paint so there is no light flash on load.
+         Dark emerald is the default — it matches the financequizportal.com quiz portal.
+         The header toggle stores an explicit choice, and 'light' is the opt-out. */
       (function () {
         try {
-          if (localStorage.getItem('ff-theme') === 'dark') {
+          if (localStorage.getItem('ff-theme') !== 'light') {
             document.documentElement.setAttribute('data-theme', 'dark');
           }
-        } catch (e) { /* storage unavailable — stay light */ }
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
       })();
     </script>
     <style>
@@ -29,7 +33,7 @@
         align-items: center;
         justify-content: center;
         gap: 26px;
-        background: #fbfaf7;
+        background: #ffffff;
         transition: opacity 0.4s ease, visibility 0.4s ease;
       }
       #app-splash.is-hidden {
@@ -53,14 +57,14 @@
         font-size: 1.35rem;
         font-weight: 700;
         letter-spacing: -0.02em;
-        color: #13202b;
+        color: #06231a;
       }
       .app-splash__bar {
         position: relative;
         width: 130px;
         height: 3px;
         border-radius: 99px;
-        background: #e4e1d8;
+        background: #dcebe2;
         overflow: hidden;
       }
       .app-splash__bar::after {
@@ -70,7 +74,7 @@
         bottom: 0;
         width: 40%;
         border-radius: inherit;
-        background: #0b5d47;
+        background: #07603f;
         animation: app-splash-slide 1s ease-in-out infinite;
       }
       @keyframes app-splash-slide {
@@ -88,16 +92,16 @@
       }
       /* Splash follows the saved dark theme too. */
       html[data-theme='dark'] #app-splash {
-        background: #0a1626;
+        background: #020b07;
       }
       html[data-theme='dark'] .app-splash__name {
-        color: #e8eef7;
+        color: #ffffff;
       }
       html[data-theme='dark'] .app-splash__bar {
-        background: #223753;
+        background: #16301f;
       }
       html[data-theme='dark'] .app-splash__bar::after {
-        background: #3f8cff;
+        background: #ffd700;
       }
     </style>
   </head>
@@ -137,7 +141,7 @@
             <rect x="335" y="244" width="43" height="153" rx="13" fill="url(#ffSplashLogoGold)"/>
           </g>
         </svg>
-        <span class="app-splash__name">FinzoriaFinance</span>
+        <span class="app-splash__name">FinanceQuizPortal</span>
       </div>
       <span class="app-splash__bar"></span>
     </div>

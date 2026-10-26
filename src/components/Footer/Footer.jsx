@@ -16,7 +16,7 @@ export default function Footer() {
             <Link to="/" className="footer__logo">
               <Logo className="footer__logo-mark" />
               <span className="footer__logo-name">
-                Finzoria<span>Finance</span>
+                Finance<span>QuizPortal</span>
               </span>
             </Link>
             <p>{SITE.description}</p>
@@ -34,7 +34,7 @@ export default function Footer() {
           </nav>
 
           <nav aria-label="Company">
-            <h2 className="footer__heading">FinzoriaFinance</h2>
+            <h2 className="footer__heading">FinanceQuizPortal</h2>
             <ul className="footer__list">
               <li><Link to="/about">About us</Link></li>
               <li><Link to="/blog">All articles</Link></li>
@@ -46,7 +46,7 @@ export default function Footer() {
 
         <div className="footer__bottom">
           <p className="footer__copy">
-            ©{year} finzoriafinance.com · Articles and original illustrations are {SITE.name} work.
+            ©{year} financequizportal.com · Articles and original illustrations are {SITE.name} work.
           </p>
         </div>
       </Container>

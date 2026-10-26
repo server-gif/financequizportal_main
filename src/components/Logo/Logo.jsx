@@ -1,5 +1,5 @@
 /**
- * FinzoriaFinance brand mark — a folded-ribbon "F" with three ascending
+ * FinanceQuizPortal brand mark — a folded-ribbon "F" with three ascending
  * financial bars on a mint-to-forest gradient tile (512x512 source art).
  * Ids are suffixed with useId() because the mark is rendered in both the
  * header and the footer, and duplicate ids would make the paint references

@@ -39,7 +39,7 @@
   filter: drop-shadow(0 2px 5px rgba(0, 63, 52, 0.3));
 }
 
-/* Same split as the header: "Finzoria" in ink, "Finance" in brand colour. */
+/* Same split as the header: "Finance" in ink, "QuizPortal" in brand colour. */
 .footer__logo-name span {
   color: var(--color-brand);
 }

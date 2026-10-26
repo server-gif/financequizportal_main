@@ -21,7 +21,7 @@ export const CATEGORIES = [
   {
     slug: 'banking',
     name: 'Banking & Credit',
-    title: 'Banking, Credit & Loans',
+    title: 'Banking, Credit & Borrowing',
     description: 'Accounts, credit scores, credit cards and borrowing — understand the rules before you sign.',
   },
   {

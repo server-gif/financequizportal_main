@@ -1,13 +1,15 @@
 {
-  "name": "finzoria-finance",
+  "name": "financequizportal",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "FinzoriaFinance — a responsive financial education publication built with React, React Router and Google Ad Manager (test units).",
+  "description": "FinanceQuizPortal — a responsive financial education publication built with React, React Router and Google Ad Manager (test units).",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "photos": "powershell -ExecutionPolicy Bypass -File ./scripts/fetch-photos.ps1",
+    "ogcards": "node scripts/make-og-cards.mjs"
   },
   "dependencies": {
     "react": "^19.2.0",

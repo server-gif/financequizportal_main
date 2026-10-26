@@ -25,7 +25,7 @@ export default function About() {
           <div className="about__body">
             <h2>What we cover</h2>
             <p>
-              Our guides span personal finance, saving, investing, mutual funds, banking, credit, loans,
+              Our guides span personal finance, saving, investing, mutual funds, banking, credit, borrowing,
               taxes and the wider economy. Each article explains the core ideas, the trade-offs involved and
               the questions worth asking before you act.
             </p>

@@ -205,3 +205,16 @@
     transform: scaleX(1);
   }
 }
+
+/* The wordmark is longer than the old one, so step it down on small phones. */
+@media (max-width: 420px) {
+  .header__mark {
+    width: 34px;
+    height: 34px;
+  }
+
+  .header__name {
+    font-size: 1.1rem;
+    letter-spacing: -0.03em;
+  }
+}

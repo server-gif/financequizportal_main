@@ -5,3 +5,8 @@ dist
 .env
 .env.local
 .env.*.local
+
+# local scratch files from scripts/make-og-cards.mjs and headless-browser checks
+scripts/.og-tmp/
+scripts/.probe-*
+probe-*.png

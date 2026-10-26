@@ -1,22 +1,39 @@
 :root {
-  /* Colour */
-  /* --color-bg: #fbfaf7; */
-  --color-bg: #fff;
-  --color-bg-soft: #f2f0ea;
+  /* Colour — emerald + gold palette shared with financequizportal.com */
+  --color-bg: #ffffff;
+  --color-bg-soft: #f1f8f4;
   --color-surface: #ffffff;
-  --color-ink: #13202b;
-  --color-body: #34424e;
-  --color-muted: #6a7682;
-  --color-border: #e4e1d8;
-  --color-border-strong: #d6d2c6;
-  --color-brand: #0b5d47;
-  --color-brand-dark: #08453a;
-  --color-brand-soft: #e5f1ec;
-  --color-accent: #c8902c;
+  --color-ink: #06231a;
+  --color-body: #2c4237;
+  --color-muted: #647a6e;
+  --color-border: #dcebe2;
+  --color-border-strong: #c3dbcd;
+  --color-brand: #07603f;
+  --color-brand-dark: #044a30;
+  --color-brand-soft: #e2f4ea;
+  --color-accent: #b8860b;
+  /* Text/icons sitting on a --color-brand fill. */
+  --color-on-brand: #ffffff;
+
+  /* Hero decorations (theme-aware tints) */
+  --hero-orb-1: rgba(7, 96, 63, 0.16);
+  --hero-orb-2: rgba(255, 215, 0, 0.24);
+  --hero-grid-line: rgba(7, 96, 63, 0.06);
+  --hero-tag-bg: rgba(7, 96, 63, 0.08);
+  --hero-tag-border: rgba(7, 96, 63, 0.18);
+  --hero-badge-bg: rgba(7, 96, 63, 0.1);
+  --hero-underline-from: rgba(255, 215, 0, 0.5);
+  --hero-underline-to: rgba(7, 96, 63, 0.15);
+  --hero-card-bg: rgba(255, 255, 255, 0.92);
+  --hero-num-shadow: 0 2px 6px rgba(7, 96, 63, 0.3);
+  --hero-pulse: rgba(7, 96, 63, 0.45);
+  --hero-pulse-fade: rgba(7, 96, 63, 0);
+  /* Page-level wash; only the dark theme paints one. */
+  --app-glow: none;
 
   /* Component-specific surfaces */
   --header-glass: rgba(255, 255, 255, 0.88);
-  --color-skeleton: #ebe8e0;
+  --color-skeleton: #e6f0ea;
 
   /* Type — iOS system font stack (SF Pro / San Francisco on Apple devices) */
   --font-sans: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', 'Helvetica Neue', 'Segoe UI', system-ui, Roboto, sans-serif;
@@ -37,25 +54,44 @@
   --header-h: 64px;
 }
 
-/* ---------- Dark theme: professional deep-navy blue ---------- */
+/* ---------- Dark theme: deep emerald with gold accents (the quiz sub-site palette) ---------- */
 html[data-theme='dark'] {
   color-scheme: dark;
 
-  --color-bg: #0a1626;
-  --color-bg-soft: #0e1e33;
-  --color-surface: #122238;
-  --color-ink: #e8eef7;
-  --color-body: #b4c2d3;
-  --color-muted: #7e8ea3;
-  --color-border: #223753;
-  --color-border-strong: #2c4468;
-  --color-brand: #3f8cff;
-  --color-brand-dark: #1f6fe5;
-  --color-brand-soft: #12294a;
-  --color-accent: #d9a441;
+  --color-bg: #020b07;
+  --color-bg-soft: #05140d;
+  --color-surface: #071b12;
+  --color-ink: #ffffff;
+  --color-body: #cfe0d6;
+  --color-muted: #9ca3af;
+  --color-border: #16301f;
+  --color-border-strong: #21462f;
+  --color-brand: #ffd700;
+  --color-brand-dark: #ffed4e;
+  --color-brand-soft: #0f2a1b;
+  --color-accent: #34d399;
+  --color-on-brand: #05240f;
 
-  --header-glass: rgba(13, 26, 45, 0.82);
-  --color-skeleton: #1a2c47;
+  --hero-orb-1: rgba(16, 90, 60, 0.55);
+  --hero-orb-2: rgba(255, 215, 0, 0.1);
+  --hero-grid-line: rgba(255, 255, 255, 0.05);
+  --hero-tag-bg: rgba(255, 215, 0, 0.1);
+  --hero-tag-border: rgba(255, 215, 0, 0.28);
+  --hero-badge-bg: rgba(255, 215, 0, 0.12);
+  --hero-underline-from: rgba(255, 215, 0, 0.5);
+  --hero-underline-to: rgba(52, 211, 153, 0.18);
+  --hero-card-bg: rgba(7, 27, 18, 0.92);
+  --hero-num-shadow: 0 2px 6px rgba(0, 0, 0, 0.55);
+  --hero-pulse: rgba(255, 215, 0, 0.35);
+  --hero-pulse-fade: rgba(255, 215, 0, 0);
+  /* Soft emerald light wash, mirroring the sub-site background. */
+  --app-glow:
+    radial-gradient(circle at 10% 0%, rgba(12, 58, 38, 0.55), transparent 45%),
+    radial-gradient(circle at 90% 15%, rgba(16, 74, 49, 0.35), transparent 50%),
+    radial-gradient(circle at 50% 100%, rgba(8, 42, 27, 0.45), transparent 60%);
+
+  --header-glass: rgba(2, 11, 7, 0.85);
+  --color-skeleton: #0a2418;
 
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
   --shadow-md: 0 8px 24px -12px rgba(0, 0, 0, 0.6);
@@ -85,7 +121,9 @@ body {
   margin: 0;
   min-height: 100vh;
   overflow-x: hidden;
-  background: var(--color-bg);
+  background-color: var(--color-bg);
+  background-image: var(--app-glow);
+  background-attachment: fixed;
   color: var(--color-body);
   font-family: var(--font-sans);
   font-size: 1rem;
@@ -184,7 +222,7 @@ button {
 
 .btn--primary {
   background: var(--color-brand);
-  color: #fff;
+  color: var(--color-on-brand);
 }
 
 .btn--primary:hover {

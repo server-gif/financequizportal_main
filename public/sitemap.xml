@@ -1,134 +1,134 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Sitemap for https://finzoriafinance.com — keep the <loc> domain in sync with VITE_SITE_URL. -->
+<!-- Sitemap for https://financequizportal.com — keep the <loc> domain in sync with VITE_SITE_URL. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://finzoriafinance.com/</loc>
+    <loc>https://financequizportal.com/</loc>
     <lastmod>2026-10-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://finzoriafinance.com/blog</loc>
+    <loc>https://financequizportal.com/blog</loc>
     <lastmod>2026-10-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://finzoriafinance.com/category/finance</loc>
+    <loc>https://financequizportal.com/category/finance</loc>
     <lastmod>2026-10-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://finzoriafinance.com/category/investing</loc>
+    <loc>https://financequizportal.com/category/investing</loc>
     <lastmod>2026-10-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://finzoriafinance.com/category/saving</loc>
+    <loc>https://financequizportal.com/category/saving</loc>
     <lastmod>2026-10-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://finzoriafinance.com/category/banking</loc>
+    <loc>https://financequizportal.com/category/banking</loc>
     <lastmod>2026-10-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://finzoriafinance.com/category/business</loc>
+    <loc>https://financequizportal.com/category/business</loc>
     <lastmod>2026-10-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://finzoriafinance.com/about</loc>
+    <loc>https://financequizportal.com/about</loc>
     <lastmod>2026-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://finzoriafinance.com/blog/how-to-build-an-emergency-fund</loc>
+    <loc>https://financequizportal.com/blog/emergency-fund-how-much-is-enough</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://finzoriafinance.com/blog/beginners-guide-to-investing</loc>
+    <loc>https://financequizportal.com/blog/first-investment-step-by-step-plan</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://finzoriafinance.com/blog/how-compound-interest-works</loc>
+    <loc>https://financequizportal.com/blog/compound-interest-why-time-beats-timing</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://finzoriafinance.com/blog/smart-ways-to-save-money</loc>
+    <loc>https://financequizportal.com/blog/30-day-money-reset-saving-habits</loc>
     <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://finzoriafinance.com/blog/understanding-mutual-funds</loc>
+    <loc>https://financequizportal.com/blog/mutual-funds-explained-costs-and-choosing</loc>
     <lastmod>2026-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://finzoriafinance.com/blog/what-is-a-credit-score</loc>
+    <loc>https://financequizportal.com/blog/credit-score-what-moves-the-number</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://finzoriafinance.com/blog/how-to-create-a-monthly-budget</loc>
+    <loc>https://financequizportal.com/blog/build-a-budget-that-survives-the-month</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://finzoriafinance.com/blog/stock-market-basics-for-beginners</loc>
+    <loc>https://financequizportal.com/blog/how-share-markets-actually-work</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://finzoriafinance.com/blog/how-inflation-affects-your-money</loc>
+    <loc>https://financequizportal.com/blog/inflation-and-your-purchasing-power</loc>
     <lastmod>2026-09-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://finzoriafinance.com/blog/financial-planning-for-young-adults</loc>
+    <loc>https://financequizportal.com/blog/money-plan-for-your-twenties</loc>
     <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://finzoriafinance.com/blog/how-to-use-credit-cards-responsibly</loc>
+    <loc>https://financequizportal.com/blog/credit-cards-how-to-keep-them-cheap</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://finzoriafinance.com/blog/understanding-loans-and-interest-rates</loc>
+    <loc>https://financequizportal.com/blog/compare-financial-products-properly</loc>
     <lastmod>2026-09-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://finzoriafinance.com/blog/tax-basics-everyone-should-know</loc>
+    <loc>https://financequizportal.com/blog/tax-basics-that-touch-every-payslip</loc>
     <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://finzoriafinance.com/blog/how-small-businesses-manage-cash-flow</loc>
+    <loc>https://financequizportal.com/blog/cash-flow-for-small-businesses</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

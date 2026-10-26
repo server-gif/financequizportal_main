@@ -12,7 +12,7 @@ export const FAQS = [
   {
     question: 'Should I pay off debt first or start investing?',
     answer:
-      'A common rule of thumb: pay off high-interest debt (such as credit cards) before investing, because the interest you save is a guaranteed return. Lower-interest debt, like many home loans, can often be serviced on schedule while you invest in parallel. Put a small emergency fund in place before either, so setbacks do not derail the plan.',
+      'A common rule of thumb: pay off high-interest debt (such as credit cards) before investing, because the interest you save is a guaranteed return. Cheaper debt, like many long-term home repayment plans, can often be serviced on schedule while you invest in parallel. Put a small emergency fund in place before either, so setbacks do not derail the plan.',
   },
   {
     question: 'How much of my income should I save each month?',
@@ -27,11 +27,11 @@ export const FAQS = [
   {
     question: 'What is a credit score and how do I improve it?',
     answer:
-      'A credit score is a number summarising how reliably you repay borrowed money. The biggest levers are paying every bill on time, keeping card balances low compared with your limit, avoiding several loan applications in a short window, and keeping older accounts open and active. Improvements are gradual — consistent behaviour over months shows in the score.',
+      'A credit score is a number summarising how reliably you repay borrowed money. The biggest levers are paying every bill on time, keeping card balances low compared with your limit, avoiding several credit applications in a short window, and keeping older accounts open and active. Improvements are gradual — consistent behaviour over months shows in the score.',
   },
   {
-    question: 'Does FinzoriaFinance give investment advice?',
+    question: 'Does FinanceQuizPortal give investment advice?',
     answer:
-      'No. Every article on FinzoriaFinance is for general education only and is not personalised financial, tax or investment advice. Markets involve risk, and rules differ by country and situation. Before acting on anything you read here, consider consulting a qualified financial professional about your own circumstances.',
+      'No. Every article on FinanceQuizPortal is for general education only and is not personalised financial, tax or investment advice. Markets involve risk, and rules differ by country and situation. Before acting on anything you read here, consider consulting a qualified financial professional about your own circumstances.',
   },
 ];
