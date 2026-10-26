@@ -24,7 +24,7 @@ const RAW_BLOGS = [
       'Compounding is the one force in personal finance that rewards patience with arithmetic. Here is what the exponent does, how much it is worth, and how to stop interrupting it.',
     isoDate: '2026-10-03',
     author: 'Markets Team',
-    imageAlt: 'Two stacks of coins on a dark table with a young green plant sprouting between them, a bright window behind',
+    imageAlt: 'A glass hourglass standing beside three stacks of coins on a dark wooden table, a pale brick wall behind',
     content: [
       p('Compound interest is the only force in personal finance that rewards patience with arithmetic. You earn a return on your balance, then you earn a return on the returns already credited to it. Nothing dramatic happens in year one. By year twenty the curve has bent upwards so sharply that the early years look like a rounding error.'),
       h2('The Mechanics in One Paragraph'),
@@ -73,7 +73,7 @@ const RAW_BLOGS = [
       'Most investing advice starts with products, which is the last decision rather than the first. Five questions, in order, decide most of the outcome.',
     isoDate: '2026-10-06',
     author: 'Markets Team',
-    imageAlt: 'An investor seen from behind studying a price chart on a laptop, printed financial reports spread across the desk',
+    imageAlt: 'A woman in a checked blazer writing on a tablet at a cafe table, a coffee cup and a large potted plant in the foreground',
     content: [
       p('Most investing advice opens with a product: buy this fund, avoid that share. That is the final decision in a sequence of five, and it is usually the least important. Get the first four right and an ordinary fund will do the job. Get them wrong and the best product in the market cannot rescue the plan.'),
       h2('Decision One: Is This Money Ready to Invest?'),
@@ -141,7 +141,7 @@ const RAW_BLOGS = [
     isoDate: '2026-10-08',
     author: 'Finance Desk',
     featured: true,
-    imageAlt: 'A clear jar labelled SAVINGS filled with coins beside a calculator on a light blue surface',
+    imageAlt: 'People walking up a cobbled street under black, patterned and orange umbrellas on a rainy day',
     content: [
       p('An emergency fund is the only part of a financial plan that is judged when something has already gone wrong. It is not an investment, a goal or a savings habit — it is insurance you pay for in cash instead of premiums, held until the day a crisis needs to be downgraded into an inconvenience.'),
       h2('Why the Standard Answer Fails'),
@@ -209,7 +209,7 @@ const RAW_BLOGS = [
       'Four weeks, four moves: see where the money goes, cut the leaks, automate the surplus and build a system that survives a bad month.',
     isoDate: '2026-09-30',
     author: 'Finance Desk',
-    imageAlt: 'A hand dropping a coin into the slot of a blue ceramic piggy bank',
+    imageAlt: 'A hand marking a date on a September wall calendar with a purple pen, resting on a light wooden desk',
     content: [
       p('Saving plans usually fail for a structural reason, not a moral one: they ask for willpower every day and offer nothing in return until the distant reward arrives. A one-month reset replaces daily decisions with a few irreversible ones, so the same income produces a different result by the end of the month.'),
       h2('Week One: Observe, Do Not Change Anything'),
@@ -272,7 +272,7 @@ const RAW_BLOGS = [
       'A fund is a simple idea wrapped in complicated paperwork. Here is how the pricing works, what the labels actually mean, and the questions that separate a sensible fund from an expensive one.',
     isoDate: '2026-09-27',
     author: 'Markets Team',
-    imageAlt: 'Two people reading a printed return-on-investment sheet with cost tables, a bar chart on the page behind',
+    imageAlt: 'A woven basket filled with yarn balls in teal, mustard, red, cream and grey, photographed from above',
     content: [
       p('A mutual fund collects money from thousands of investors, invests it according to one written strategy, and divides the result into units. Your units rise and fall with the underlying holdings. Everything else — the categories, the paperwork, the fees — exists to describe and to charge for that single mechanism.'),
       h2('How a Fund Is Priced'),
@@ -331,7 +331,7 @@ const RAW_BLOGS = [
       'Lenders reduce you to three digits before you ever speak to a person. Here are the inputs that number is built from, the maths behind utilisation, and the habits that shift it.',
     isoDate: '2026-09-24',
     author: 'Banking Desk',
-    imageAlt: 'Wooden letter tiles arranged to spell the word CREDIT on a rustic timber surface',
+    imageAlt: 'A financial adviser in a dark suit explaining a printed form to a seated client across a wooden desk',
     content: [
       p('A credit score is a statistical guess about one question: if money is lent to you, how likely is it to come back on time? Everything in the score is past behaviour, which is why it feels unfair when you are new to credit and why it responds so predictably once you know what it weighs.'),
       h2('What the Number Is Actually For'),
@@ -399,7 +399,7 @@ const RAW_BLOGS = [
       'Most budgets fail in week three — not because the numbers were wrong, but because the system had no room for a bad week. Start from take-home pay, pick one method, and build the buffer in first.',
     isoDate: '2026-09-21',
     author: 'Finance Desk',
-    imageAlt: 'A hand writing figures in a notebook beside a calculator and a stack of fifty-dollar notes',
+    imageAlt: 'An overhead view of an open blank notebook beside a mug of coffee, a laptop edge and stacked books on a sunlit wooden table',
     content: [
       p('A budget is not a restriction. It is the set of decisions you make once so you do not have to make them again at 9pm in a shop. The plans that fail are rarely the strictest — they are the ones with no room for an ordinary bad week.'),
       h2('Start From What Actually Lands'),
@@ -467,7 +467,7 @@ const RAW_BLOGS = [
       'A share is a slice of a real business, but the number on screen is set by an auction that never closes. Understand the mechanics, the indices and the costs before you place a first order.',
     isoDate: '2026-09-18',
     author: 'Markets Team',
-    imageAlt: 'Green and red candlestick bars on a dark trading screen, photographed at an angle',
+    imageAlt: 'A trader’s hand on a keyboard in front of a monitor showing a candlestick price chart, the room lit only by the screen',
     content: [
       p('Buying a share takes one tap and settles in two days. Between those two moments sits an entire market: an exchange matching orders, dealers quoting prices, and a company whose results will eventually decide whether the tap was a good idea. Understanding that machinery is what separates investing from guessing.'),
       h2('What a Share Actually Is'),
@@ -547,7 +547,7 @@ const RAW_BLOGS = [
       'Inflation is measured in averages and felt in specifics. Here is what the number means, how it compounds against idle cash, and what genuinely protects the value of your money.',
     isoDate: '2026-09-15',
     author: 'Economy Desk',
-    imageAlt: 'A woman with a shopping trolley reaching up for a shelf of groceries in a supermarket aisle',
+    imageAlt: 'A long supermarket aisle of shelves stocked with tinned and packaged food, price tags along the shelf edges',
     content: [
       p('Inflation is the rate at which the general price level rises, which is another way of saying money buys less than it used to. Modest inflation is normal in a growing economy. The problem is not the number on the news — it is what the number quietly does to savings, wages and long-range plans.'),
       h2('What the Number Measures'),
@@ -613,7 +613,7 @@ const RAW_BLOGS = [
       'You will probably earn more later, but you will never again have this much time. A practical sequence for the decade that quietly decides the next three.',
     isoDate: '2026-09-12',
     author: 'Finance Desk',
-    imageAlt: 'A couple at a kitchen table with a calculator, paperwork and a laptop, reviewing household finances together',
+    imageAlt: 'A young man standing in an empty white room surrounded by open cardboard moving boxes',
     content: [
       p('Your twenties are the cheapest decade in which to get money right. The amounts available are small, the mistakes are survivable, and the one ingredient that cannot be bought later — time — is still in surplus. The aim is not to live like a monk; it is to leave the decade with three things working: a habit, a buffer and a portfolio.'),
       h2('The Decade Advantage, in One Number'),
@@ -684,7 +684,7 @@ const RAW_BLOGS = [
       'A card is either a free payment tool or one of the most expensive ways to spend money — and the difference is a single habit. Here is the mechanism, the arithmetic and the payoff plan.',
     isoDate: '2026-09-09',
     author: 'Banking Desk',
-    imageAlt: 'A customer tapping a contactless bank card against a card terminal at a shop counter',
+    imageAlt: 'A woman on a sofa holding a bank card in one hand while reading her phone in the other',
     content: [
       p('A credit card is a short-term borrowing facility wrapped in a payment convenience. Pay the statement balance in full and you use the convenience for nothing. Carry a balance and the facility becomes the most expensive money most households ever hold, at rates that would be rejected outright on any other product.'),
       h2('How the Card Cycle Actually Works'),
@@ -745,7 +745,7 @@ const RAW_BLOGS = [
       'Two offers can advertise the same headline rate and still cost very different amounts. Compare the total, the flexibility and the fine print — in that order.',
     isoDate: '2026-09-06',
     author: 'Banking Desk',
-    imageAlt: 'A calculator and a house-shaped key fob resting on a spread of printed financial brochures',
+    imageAlt: 'A man in a checked shirt reading a printed document at an office desk, a laptop and notebook open beside him',
     content: [
       p('Every financial product is sold with one beautiful number. A rate, a monthly figure, a percentage off. The number is rarely wrong, but it is almost always incomplete, and the parts left out are the parts that decide whether the arrangement was a good idea two years later.'),
       h2('Total Cost Beats Headline Rate'),
@@ -805,7 +805,7 @@ const RAW_BLOGS = [
       'Tax is deducted before you see your salary and again when you invest it. These are the concepts that make a payslip readable and filing season less expensive.',
     isoDate: '2026-09-03',
     author: 'Finance Desk',
-    imageAlt: 'An overhead view of a hand completing a printed income tax return form with a pen, a small calculator and a TAX label card beside it',
+    imageAlt: 'Reading glasses resting on a kraft document folder above printed income tax forms, a calendar and a pen',
     content: [
       p('Tax rules differ by country and change often, but the machinery underneath is remarkably consistent. Understand four ideas — gross, taxable, marginal and withheld — and you can read any payslip, question any tax bill and avoid the mistakes that cost the most money for the least drama.'),
       h2('Gross, Net and Taxable Are Three Different Numbers'),
@@ -868,7 +868,7 @@ const RAW_BLOGS = [
       'Profit is an opinion; cash is a fact. How to forecast the money moving through a small business and spot a squeeze while there is still time to act.',
     isoDate: '2026-08-31',
     author: 'Economy Desk',
-    imageAlt: 'A cafe barista handing a banknote to a customer across the counter, menu boards on the wall behind',
+    imageAlt: 'A bakery worker handing a paper bag with a receipt to a customer across the counter, a point-of-sale screen beside them',
     content: [
       p('Businesses do not fail because a spreadsheet said they were unprofitable. They fail because a payment left the account before the money arrived, and nobody saw it coming until the day it happened. Cash flow is the calendar of a business — and calendars, unlike opinions, cannot be argued with.'),
       h2('Why Profitable Businesses Run Out of Money'),

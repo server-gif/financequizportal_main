@@ -44,20 +44,20 @@ $dest = Join-Path $root 'public\images\photos'
 # slug => Pexels photo id. This table is the single source of truth; src/data
 # and src/config never name a third-party image URL themselves.
 $photos = [ordered]@{
-  'compound-interest-why-time-beats-timing'      = 11391951
-  'first-investment-step-by-step-plan'           = 5716016
-  'emergency-fund-how-much-is-enough'            = 9821387
-  '30-day-money-reset-saving-habits'             = 1602726
-  'mutual-funds-explained-costs-and-choosing'    = 7651559
-  'credit-score-what-moves-the-number'           = 19867473
-  'build-a-budget-that-survives-the-month'       = 4386339
-  'how-share-markets-actually-work'              = 6770610
-  'inflation-and-your-purchasing-power'          = 4971967
-  'money-plan-for-your-twenties'                 = 6963046
-  'credit-cards-how-to-keep-them-cheap'          = 5239818
-  'compare-financial-products-properly'          = 8293750
-  'tax-basics-that-touch-every-payslip'         = 6863337
-  'cash-flow-for-small-businesses'               = 4921271
+  'compound-interest-why-time-beats-timing'      = 11899617
+  'first-investment-step-by-step-plan'           = 6980217
+  'emergency-fund-how-much-is-enough'            = 28891151
+  '30-day-money-reset-saving-habits'             = 7580934
+  'mutual-funds-explained-costs-and-choosing'    = 5806923
+  'credit-score-what-moves-the-number'           = 7821671
+  'build-a-budget-that-survives-the-month'       = 6627401
+  'how-share-markets-actually-work'              = 39076662
+  'inflation-and-your-purchasing-power'          = 16211537
+  'money-plan-for-your-twenties'                 = 7203784
+  'credit-cards-how-to-keep-them-cheap'          = 36713162
+  'compare-financial-products-properly'          = 22046214
+  'tax-basics-that-touch-every-payslip'          = 8962523
+  'cash-flow-for-small-businesses'               = 12935094
 }
 
 New-Item -ItemType Directory -Force -Path $dest | Out-Null

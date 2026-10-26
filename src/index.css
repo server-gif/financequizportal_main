@@ -1,19 +1,23 @@
 :root {
   /* Colour — emerald + gold palette shared with financequizportal.com */
   --color-bg: #ffffff;
-  --color-bg-soft: #f1f8f4;
+  --color-bg-soft: #f7f5ec;
   --color-surface: #ffffff;
   --color-ink: #06231a;
   --color-body: #2c4237;
-  --color-muted: #647a6e;
-  --color-border: #dcebe2;
-  --color-border-strong: #c3dbcd;
-  --color-brand: #07603f;
-  --color-brand-dark: #044a30;
-  --color-brand-soft: #e2f4ea;
-  --color-accent: #b8860b;
+  --color-muted: #6b7060;
+  --color-border: #e5e2d3;
+  --color-border-strong: #d3cdb6;
+  --color-brand: #7d5d0c;
+  --color-brand-dark: #644a09;
+  --color-brand-soft: #f9f3e0;
+  --color-accent: #0b6b4a;
+  /* Solid fills (buttons, step discs) need a brighter gold than the text
+     accent, otherwise the dark label on top loses contrast. */
+  --color-brand-fill: #c9992a;
+  --color-brand-fill-hover: #b0841c;
   /* Text/icons sitting on a --color-brand fill. */
-  --color-on-brand: #ffffff;
+  --color-on-brand: #1f1703;
 
   /* Hero decorations (theme-aware tints) */
   --hero-orb-1: rgba(7, 96, 63, 0.16);
@@ -28,8 +32,13 @@
   --hero-num-shadow: 0 2px 6px rgba(7, 96, 63, 0.3);
   --hero-pulse: rgba(7, 96, 63, 0.45);
   --hero-pulse-fade: rgba(7, 96, 63, 0);
-  /* Page-level wash; only the dark theme paints one. */
-  --app-glow: none;
+  /* Page-level wash: the light-mode twin of the dark theme's emerald glow —
+     soft emerald and gold light over white, kept faint so text contrast and
+     cards stay clean. */
+  --app-glow:
+    radial-gradient(circle at 8% 0%, rgba(7, 96, 63, 0.1), transparent 42%),
+    radial-gradient(circle at 92% 14%, rgba(255, 215, 0, 0.14), transparent 46%),
+    radial-gradient(circle at 50% 100%, rgba(7, 96, 63, 0.08), transparent 58%);
 
   /* Component-specific surfaces */
   --header-glass: rgba(255, 255, 255, 0.88);
@@ -70,6 +79,8 @@ html[data-theme='dark'] {
   --color-brand-dark: #ffed4e;
   --color-brand-soft: #0f2a1b;
   --color-accent: #34d399;
+  --color-brand-fill: var(--color-brand);
+  --color-brand-fill-hover: var(--color-brand-dark);
   --color-on-brand: #05240f;
 
   --hero-orb-1: rgba(16, 90, 60, 0.55);
@@ -221,12 +232,12 @@ button {
 }
 
 .btn--primary {
-  background: var(--color-brand);
+  background: var(--color-brand-fill);
   color: var(--color-on-brand);
 }
 
 .btn--primary:hover {
-  background: var(--color-brand-dark);
+  background: var(--color-brand-fill-hover);
 }
 
 .btn--ghost {

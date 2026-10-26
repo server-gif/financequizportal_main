@@ -1,0 +1,86 @@
+/**
+ * Custom interstitial overlay.
+ *
+ * The veil is ours (not Google's cross-origin vignette), so the blurred
+ * backdrop renders identically in light and dark themes. The preloaded ad
+ * creative lives in .inter__card; the container is hidden — but laid out —
+ * so GPT can render into it in the background before it is ever shown.
+ */
+
+.inter {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  /* Deep emerald wash + blur: reads the same over light and dark pages. */
+  background: rgba(2, 11, 7, 0.62);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.inter--open {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.inter__stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  max-width: 100%;
+}
+
+.inter__close {
+  align-self: flex-end;
+  border: 1px solid rgba(236, 253, 245, 0.45);
+  border-radius: 999px;
+  background: transparent;
+  color: #ecfdf5;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 6px 18px;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.inter__close:hover {
+  background: rgba(236, 253, 245, 0.14);
+  border-color: rgba(236, 253, 245, 0.75);
+}
+
+/* White mat that hugs the creative — an ad can never spill outside it:
+   it clips its own overflow and is capped to the viewport height. */
+.inter__card {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  padding: 8px;
+  box-shadow: var(--shadow-lg);
+  max-width: 100%;
+  max-height: calc(100dvh - 120px);
+  overflow: hidden;
+}
+
+/* GPT resizes this div inline to the returned creative's size; the min-*
+   values only reserve space before the first render. */
+.inter__ad {
+  min-width: min(300px, 100%);
+  min-height: 250px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.inter__ad iframe {
+  display: block;
+  max-width: 100%;
+  border: 0;
+}

@@ -172,14 +172,14 @@
 
 .hero__btn--primary {
   color: var(--color-on-brand);
-  background: var(--color-brand);
+  background: var(--color-brand-fill);
   border: 1.5px solid var(--color-ink);
   box-shadow: 4px 4px 0 var(--color-ink);
 }
 
 .hero__btn--primary:hover {
   color: var(--color-on-brand);
-  background: var(--color-brand-dark);
+  background: var(--color-brand-fill-hover);
   transform: translate(-2px, -2px);
   box-shadow: 6px 6px 0 var(--color-ink);
 }
@@ -357,7 +357,7 @@
   font-size: 0.65rem;
   font-weight: 700;
   color: var(--color-on-brand);
-  background: var(--color-brand);
+  background: var(--color-brand-fill);
   border: 2px solid var(--color-surface);
   border-radius: 50%;
   box-shadow: var(--hero-num-shadow);
